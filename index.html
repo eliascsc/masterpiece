@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="gallery">
+  <h1>PHOTO GALLERY</h1>
+
+  <div class="tabs">
+    <button class="active" data-filter="all">Todos</button>
+    <button data-filter="eventos">Eventos</button>
+    <button data-filter="paisagens">Paisagens</button>
+    <button data-filter="animais">Animais</button>
+    <button data-filter="pessoas">Pessoas</button>
+  </div>
+
+  <div class="grid">
+    <!-- EVENTOS -->
+    <img src="https://i.ibb.co/LINK1.jpg" data-category="eventos">
+    <img src="https://i.ibb.co/LINK2.jpg" data-category="eventos">
+
+    <!-- PAISAGENS -->
+    <img src="https://i.ibb.co/LINK3.jpg" data-category="paisagens">
+    <img src="https://i.ibb.co/LINK4.jpg" data-category="paisagens">
+
+    <!-- ANIMAIS -->
+    <img src="https://i.ibb.co/LINK5.jpg" data-category="animais">
+
+    <!-- PESSOAS -->
+    <img src="https://i.ibb.co/LINK6.jpg" data-category="pessoas">
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
